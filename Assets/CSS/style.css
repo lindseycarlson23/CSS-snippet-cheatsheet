@@ -1,0 +1,41 @@
+body {
+    background-color: gray;
+    margin: 20px 10px 30px 10px;
+    
+    
+}
+
+header {
+    text-align: center;
+    font-size: 45px;
+    color: purple;
+    padding: 20px
+}
+
+article {
+
+}
+
+.card {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    border-style: dotted;
+    border-color: whitesmoke;
+    color: purple;
+    border-width: ;
+}
+
+.flex-container {
+    display: flex;
+}
+
+#para1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: whitesmoke;
+    margin: 5px 100px 25px 100px;
+    
+}
