@@ -17,36 +17,115 @@
         </header>
 
         <main>
-                <article class="tiles">
+            
+                <article class="card">
                     <div>
-                        <h2 class="box-title">
-                            Flexbox row
+                        <h2 class="card-title">
+                            Flexbox Row
                         </h2>
-                        <pre class="code-box">
-                           .row {
-                            display: flex;
-                            flex-direction: row;
-                            flex-wrap wrap;
-                           }     
+                        <p>
+                            Use these three properties to create a Flexbox row layout.
+                        </p>
+                        <pre class="code-card">
+     .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }     
                         </pre>
                     </div>
 
+                   
+                </article>
+                <article class="card">
                     <div>
-                        <pre> 
-
+                        <h2 class="card-title">
+                            Flexbox Column
+                        </h2>
+                        <p>
+                            Use this to create a Flexbox column layout.
+                        </p>
+                        <pre class="code-card"> 
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
                         </pre>
                     </div>
                 </article>
-                <article class="tiles"></article>
-                <article class="tiles"></article>
-                <article class="tiles"></article>
-                <article class="tiles"></article>
-                <article class="tiles"></article>
-
-                <footer>
-                    Made with ♥ ❤and CSS
-                </footer>
+                <article class="card">
+                    <div>
+                        <h2 class="card-title">
+                            CSS Grid Layout
+                        </h2>
+                        <p>
+                            Build a 12-column layout using CSS Grid.
+                        </p>
+                        <pre class="code-card">
+    .grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns:
+    repeat (12, lfr)
+    }
+                        </pre>
+                    </div>
+                </article>
+                <article class="card">
+                    <div>
+                        <h2 class="card-title">
+                            Linear Gradients
+                        </h2>
+                        <p>
+                            This will create a background linear gradient from top to bottom.
+                        </p>
+                        <pre class="code-card">
+    .linear-gradient-background {
+        background-image: linear-gradient(
+            rgba(232, 102, 236, 0.3) 0%,
+            rgba(232, 102, 236, 0.6) 100%
+        ) ;
+    }
+                        </pre>
+                    </div>
+                </article>
+                <article class="card">
+                    <div>
+                        <h2 class="card-title">
+                            Box Transition Glow
+                        </h2>
+                        <p>
+                            Use transition and box shadows to glow on hover.
+                        </p>
+                        <pre class="code-card">
+    .code-card .card-header {
+        border-radius: 8px;
+        transition: all 0.5s ease-in-out;
+    }
+                        </pre>
+                    </div>
+                </article>
+                <article class="card">
+                    <div>
+                        <h2 class="card-title">
+                            Overlay Card with Title
+                        </h2>
+                        <p>
+                            Use position properties and negative margins to raise elements higher than their natural starting point.
+                        </p>
+                        <pre class="code-card">
+    .card-header {
+        position: relative;
+        margin-top: -20px;
+    }
+                        </pre>
+                    </div>
+                </article>
         </main>
+
+        <footer>
+            Made with ♥ ❤and CSS
+        </footer>
            
         
     </footer>

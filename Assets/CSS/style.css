@@ -5,10 +5,12 @@ header {
 }
 
 main {
-   background-color: gray; 
+   background-color: rgb(78, 76, 90); 
    flex: 1 0 auto;
    display: flex;
    flex-flow: wrap;
+   justify-content: center;
+   margin: 1 0 auto;
 }
 
 footer {
@@ -16,45 +18,51 @@ footer {
     flex: 1 0 auto;
     text-align: center;
     justify-content: bottom;
+    color: violet
 }
-
 
 
 .container {
-    background-color: gray;
+    background-color: rgb(78, 76, 90);
     width: 100%;
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
 }
 
 .title {
-    color: purple;
+    color: violet;
     flex: 1 auto;
+    margin-bottom: 20px;
 }
 
-.tiles {
+.card {
     display: flex;
-    min-height: 200px;
-    min-width: 200px;
+    min-height: 300px;
+    max-width: 300px;
     align-items: center;
     border-style: dotted;
     border-color: whitesmoke;
-    color: purple;
-    border-width: ;
-    margin: 5px 5px 5px 5px;
-    justify-content: center;
+    color: violet;
+    margin: 20px;
+    padding: 10px;
+    flex-wrap: wrap;
+    
 }
 
-.code-box {
-    background-color: purple;
+.code-card {
+    background-color: violet;
     color: whitesmoke;
     justify-content: center;
     background-position: center;
+    margin: auto;
 
 }
 
-.box-title {
+.card-title {
     border: solid white;
+    text-align: center;
+    position: relative;
+    margin-top: -20px;
 }
 
 #subtitle {
@@ -62,20 +70,32 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     color: whitesmoke;
-    margin: 5px 100px 25px 100px;
+    margin: 15px 100px 25px 100px;
     font-size: 2vh;
 }
 
 /* tablet styles */
+
+@media screen and (min-width: 993px){
+    .container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: max-content repeat(3, lfr)
+    }
+}
 @media screen and (max-width: 992px){
     .container {
-        flex-direction: row;
+        display: grid;
+        width: 100%;
+        grid-template-columns: max-content repeat(2, lfr)
     }
 }
 
 /* phone styles */
 @media screen and (max-width: 768px){
     .container {
-        flex-direction: column;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat (1, lfr)
     }
 }
