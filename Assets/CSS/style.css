@@ -46,16 +46,14 @@ footer {
     margin: 20px;
     padding: 10px;
     flex-wrap: wrap;
-    
 }
 
-.code-card {
-    background-color: violet;
+.card-code {
     color: whitesmoke;
     justify-content: center;
     background-position: center;
     margin: auto;
-
+    background: linear-gradient(0deg, purple, violet);
 }
 
 .card-title {
@@ -76,7 +74,7 @@ footer {
 
 /* tablet styles */
 
-@media screen and (min-width: 993px){
+@media all and (min-width: 993px){
     .container {
         display: grid;
         width: 100%;
