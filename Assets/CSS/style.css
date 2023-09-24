@@ -1,41 +1,81 @@
-body {
-    background-color: gray;
-    margin: 20px 10px 30px 10px;
-    
-    
-}
-
 header {
     text-align: center;
     font-size: 45px;
-    color: purple;
     padding: 20px
 }
 
-article {
-
+main {
+   background-color: gray; 
+   flex: 1 0 auto;
+   display: flex;
+   flex-flow: wrap;
 }
 
-.card {
+footer {
+    min-height: 250px;
+    flex: 1 0 auto;
+    text-align: center;
+    justify-content: bottom;
+}
+
+
+
+.container {
+    background-color: gray;
+    width: 100%;
     display: flex;
-    height: 200px;
-    width: 200px;
+    flex-flow: column;
+}
+
+.title {
+    color: purple;
+    flex: 1 auto;
+}
+
+.tiles {
+    display: flex;
+    min-height: 200px;
+    min-width: 200px;
     align-items: center;
     border-style: dotted;
     border-color: whitesmoke;
     color: purple;
     border-width: ;
+    margin: 5px 5px 5px 5px;
+    justify-content: center;
 }
 
-.flex-container {
-    display: flex;
+.code-box {
+    background-color: purple;
+    color: whitesmoke;
+    justify-content: center;
+    background-position: center;
+
 }
 
-#para1 {
+.box-title {
+    border: solid white;
+}
+
+#subtitle {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     color: whitesmoke;
     margin: 5px 100px 25px 100px;
-    
+    font-size: 2vh;
+}
+
+/* tablet styles */
+@media screen and (max-width: 992px){
+    .container {
+        flex-direction: row;
+    }
+}
+
+/* phone styles */
+@media screen and (max-width: 768px){
+    .container {
+        flex-direction: column;
+    }
 }
