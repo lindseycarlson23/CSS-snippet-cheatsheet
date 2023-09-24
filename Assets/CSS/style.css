@@ -38,7 +38,7 @@ footer {
 .card {
     display: flex;
     min-height: 300px;
-    max-width: 300px;
+    max-width: 325px;
     align-items: center;
     border-style: dotted;
     border-color: whitesmoke;
